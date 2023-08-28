@@ -129,15 +129,15 @@ h1>img {
 }
 
 #bp1:active {
-    background-color: rgb(69, 190, 142);
+    background-color: rgb(59, 180, 132);
 }
 
 #bp2:active {
-    background-color: rgb(48, 124, 245);
+    background-color: rgb(38, 114, 235);
 }
 
 #brs:active {
-    background-color: rgb(229, 25, 50);
+    background-color: rgb(219, 15, 40);
 }
 
 /* buttons End */
@@ -312,8 +312,14 @@ label {
     #nameSave:hover,
     #bcl:hover,
     #br:hover {
-        background-color: transparent;
+        background-color: white;
         box-shadow: none;
+    }
+    #nameHide:active,
+    #nameSave:active,
+    #bcl:active,
+    #br:active {
+        background-color: rgb(220, 220, 220);
     }
 }
 
