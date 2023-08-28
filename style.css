@@ -79,6 +79,11 @@ h1>img {
     text-decoration: underline;
 }
 
+#edit:active {
+    background-color: rgb(220, 220, 220);
+}
+
+
 #buttons {
     display: flex;
 }
@@ -275,7 +280,6 @@ label {
     height: 14px;
     border-radius: 50%;
     background-color: rgb(0, 0, 0, 0.75);
-    ;
     transition: 0.3s;
 }
 
@@ -290,14 +294,26 @@ label {
 }
 
 @media(max-width:500px) {
-
     #names,
     #greet {
         width: 90%;
     }
-
     #theme {
         flex-direction: column;
+    }
+    #edit:hover {
+        text-decoration: none;
+    }
+    #bp1:hover,#bp2:hover,#brs:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    #nameHide:hover,
+    #nameSave:hover,
+    #bcl:hover,
+    #br:hover {
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
