@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ballLogo1.png">
+</head>
+
+<body>
+    <div id="main">
+        <h1><img src="ballLogo1.png" alt=""> Score Keeper</h1>
+        <div id="theme">
+            <p>Theme</p>
+            <input type="checkbox" id="toggle" style="display: none;">
+            <label for="toggle" class="switch"></label>
+        </div>
+    </div>
+    <div id="container">
+        <img src="tableTennis.png" alt="someImage">
+        <p id="para1">Play a game and have Fun!!</p>
+        <p id="para2"><span id="sp1">0</span> to <span id="sp2">0</span></p>
+        <p id="para3">Use the buttons below to update scores</p>
+        <div id="d2">
+            <p id="para4">Playing to <span id="st"></span></p>
+            <select id="target">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+            <button id="edit">Edit Names</button>
+        </div>
+        <div id="buttons">
+            <button id="bp1">+1 <span class="aName">Player A</span></button>
+            <button id="bp2">+1 <span class="bName">Player B</span></button>
+            <button id="brs">Restart <span>↻</span></button>
+        </div>
+    </div>
+    <hr style="color: rgb(190, 190, 190);width: 300px;">
+    <div id="recent" style="display: none;">
+        <h2>Recent</h2>
+        <hr>
+        <section id="hist"></section>
+    </div>
+
+    <div id="names">
+        <label for="a">Player A </label>
+        <input type="text" id="a" placeholder="Player A"><br>
+        <label for="b">Player B </label>
+        <input type="text" id="b" placeholder="Player B">
+        <p id="invalid1">Invalid name(max:15), Try Again!!</p>
+        <p id="invalid2">Invalid name(min:1), Try Again!!</p>
+        <div id="namebts">
+            <button id="nameSave">Save</button>
+            <button id="nameHide">Hide</button>
+        </div>
+    </div>
+    <div id="greet">
+        <p id="greetp"><span id="winner">Vinay
+            </span> won by <span id="lead">3
+            </span> points</p>
+        <div id="namebts1">
+            <button id="br">Restart</button>
+            <button id="bcl">Close</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
