@@ -126,6 +126,7 @@ document.querySelector('#nameSave').addEventListener('click',
             A.value = B.value = '';
             A.setAttribute('placeholder', `${aName}`);
             B.setAttribute('placeholder', `${bName}`);
+            names.style.display = 'none';
             return;
         }
         else {
