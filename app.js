@@ -151,6 +151,7 @@ bcl.addEventListener('click', function () {
 const switchh = document.querySelector('.switch');
 const divs = document.querySelectorAll('body>div');
 const darkT = window.matchMedia('(prefers-color-scheme : dark)');
+const toggg = document.querySelector('#toggle');
 
 function themes() {
     if (sync == 0) {
@@ -177,6 +178,7 @@ function themes() {
 switchh.addEventListener('click', themes)
 
 if (darkT.matches) {
+    toggg.checked = true;
     sync = 0; themes();
 }
 else {
