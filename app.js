@@ -150,8 +150,9 @@ bcl.addEventListener('click', function () {
 //Dark Theme
 const switchh = document.querySelector('.switch');
 const divs = document.querySelectorAll('body>div');
+const darkT = window.matchMedia('(prefers-color-scheme : dark)');
 
-switchh.addEventListener('click', function () {
+function themes() {
     if (sync == 0) {
         sp1.style.color = sp2.style.color = 'white';
         body.style.backgroundColor = '#212529';
@@ -171,5 +172,13 @@ switchh.addEventListener('click', function () {
         }
         sync = 0;
     }
-})
-// or = '#343a40'
+}
+
+switchh.addEventListener('click', themes)
+
+if (darkT.matches) {
+    sync = 0; themes();
+}
+else {
+    sync = 1; themes();
+}
