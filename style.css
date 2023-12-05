@@ -148,7 +148,10 @@ h1>img {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+#recent{
+    overflow: auto;
+    height:80vh;
+}
 span {
     font-weight: bold;
 }
