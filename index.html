@@ -18,36 +18,36 @@
             <label for="toggle" class="switch"></label>
         </div>
     </div>
-    <div id="container">
-        <img src="tableTennis.png" alt="someImage">
-        <p id="para1">Play a game and have Fun!!</p>
-        <p id="para2"><span id="sp1">0</span> to <span id="sp2">0</span></p>
-        <p id="para3">Use the buttons below to update scores</p>
-        <div id="d2">
-            <p id="para4">Playing to <span id="st"></span></p>
-            <select id="target">
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-            </select>
-            <button id="edit">Edit Names</button>
+    <div id="mainContainer">
+        <div id="container">
+            <img src="tableTennis.png" alt="someImage">
+            <p id="para1">Play a game and have Fun!!</p>
+            <p id="para2"><span id="sp1">0</span> to <span id="sp2">0</span></p>
+            <p id="para3">Use the buttons below to update scores</p>
+            <div id="d2">
+                <p id="para4">Playing to <span id="st"></span></p>
+                <select id="target">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+                <button id="edit">Edit Names</button>
+            </div>
+            <div id="buttons">
+                <button id="bp1">+1 <span class="aName">Player A</span></button>
+                <button id="bp2">+1 <span class="bName">Player B</span></button>
+                <button id="brs">Restart <span>↻</span></button>
+            </div>
         </div>
-        <div id="buttons">
-            <button id="bp1">+1 <span class="aName">Player A</span></button>
-            <button id="bp2">+1 <span class="bName">Player B</span></button>
-            <button id="brs">Restart <span>↻</span></button>
+        <div id="recent">
+            <h2>Recent</h2>
+            <section id="hist"></section>
         </div>
-    </div>
-    <hr style="color: rgb(190, 190, 190);width: 300px;">
-    <div id="recent" style="display: none;">
-        <h2>Recent</h2>
-        <hr>
-        <section id="hist"></section>
     </div>
 
     <div id="names">
@@ -73,7 +73,7 @@
     </div>
     <script src="app.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9246663276926704"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

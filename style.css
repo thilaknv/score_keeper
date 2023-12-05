@@ -1,5 +1,5 @@
 body {
-    height: 110vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +9,7 @@ body {
 body>div {
     border: 1px solid rgb(210, 210, 210);
     border-radius: 5px;
+
 }
 
 h1>img {
@@ -18,8 +19,38 @@ h1>img {
     border-radius: 50%;
 }
 
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    border: none;
+}
+
+#recent {
+    overflow: auto;
+    height: 71.5vh;
+    width: 300px;
+}
+
+#recent>h2 {
+    padding: 10px 20px 10px 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #8d99ae;
+    border-radius: 10px;
+}
+
 #container {
     margin-top: 5px;
+    height: 71.5vh;
 }
 
 #container>img {
@@ -142,16 +173,12 @@ h1>img {
 
 /* buttons End */
 
-#hist p,
-#recent>h2 {
+#hist p {
     line-height: 25%;
     padding-left: 20px;
     padding-right: 20px;
 }
-#recent{
-    overflow: auto;
-    height:80vh;
-}
+
 span {
     font-weight: bold;
 }
@@ -297,20 +324,27 @@ label {
 }
 
 @media(max-width:500px) {
+
     #names,
     #greet {
         width: 90%;
     }
+
     #theme {
         flex-direction: column;
     }
+
     #edit:hover {
         text-decoration: none;
     }
-    #bp1:hover,#bp2:hover,#brs:hover {
+
+    #bp1:hover,
+    #bp2:hover,
+    #brs:hover {
         box-shadow: none;
         transform: none;
     }
+
     #nameHide:hover,
     #nameSave:hover,
     #bcl:hover,
@@ -318,6 +352,7 @@ label {
         background-color: white;
         box-shadow: none;
     }
+
     #nameHide:active,
     #nameSave:active,
     #bcl:active,
@@ -331,7 +366,8 @@ label {
         flex-direction: column;
         margin: 0px 20px 0px 20px;
     }
-    #container{
+
+    #container {
         padding-bottom: 20px;
     }
 }

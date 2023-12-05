@@ -42,11 +42,9 @@ function reset() {
     p1 = p2 = 0;
     updateRecent(0);
     gameOver = false;
-    recent.style.display = 'none';
 }
 
 bp1.addEventListener('click', function () {
-    p1 == 0 && p2 == 0 && (recent.style.display = 'block');
     if (!gameOver) {
         updateRecent('a')
         sp1.innerText = `${++p1}`;
@@ -62,7 +60,6 @@ bp1.addEventListener('click', function () {
 })
 
 bp2.addEventListener('click', function () {
-    p1 == 0 && p2 == 0 && (recent.style.display = 'block');
     if (!gameOver) {
         updateRecent('b')
         sp2.innerText = `${++p2}`;
