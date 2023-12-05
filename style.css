@@ -1,6 +1,7 @@
 body {
     height: 90vh;
     display: flex;
+    scrollbar-color: transperent;
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
@@ -29,7 +30,7 @@ h1>img {
 
 #recent {
     overflow: auto;
-    height: 71.5vh;
+    height: 478px;
     width: 300px;
 }
 
@@ -50,7 +51,7 @@ h1>img {
 
 #container {
     margin-top: 5px;
-    height: 71.5vh;
+    height: 478px;
 }
 
 #container>img {
