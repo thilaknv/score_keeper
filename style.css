@@ -325,6 +325,14 @@ label {
 }
 
 @media(max-width:500px) {
+    #mainContainer {
+        flex-direction: column;
+    }
+
+    #container,
+    #recent {
+        height: auto;
+    }
 
     #names,
     #greet {
